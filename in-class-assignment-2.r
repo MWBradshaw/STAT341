@@ -2,7 +2,7 @@ PATH <- "https://raw.githubusercontent.com/owid/covid-19-data/master/public/data
 df <- read.csv(PATH) 
 
 anova_one_way <-aov(total_cases~new_cases, data = df)
-summary(anova_new__total_cases) 
+summary(anova_one_way) 
 
             Df    Sum Sq   Mean Sq F value Pr(>F)    
 new_cases        1 6.612e+19 6.612e+19   47485 <2e-16 ***
