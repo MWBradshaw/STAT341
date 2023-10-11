@@ -26,6 +26,21 @@ pts = seq(-4.5,4.5,length=100)
  
 plot(pts,dt(pts,df=9),col='red',type='l')
 
+
 lines(density(x), col='green')
 
+
 lines(density(y), col='blue')
+
+
+ttest = t.test(x,y)
+Welch Two Sample t-test
+
+data:  x and y
+t = -2.8808, df = 14.899, p-value = 0.01149
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -2.5550237 -0.3812683
+sample estimates:
+ mean of x  mean of y 
+-0.4264742  1.0416718 
